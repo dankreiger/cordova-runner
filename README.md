@@ -28,7 +28,8 @@ $ npm install -g cordova-runner
 
 #### Setup:
 
-1. `cd` into your `html/css/js` project.
+- `cd` into your `html/css/js` project.
+
   - A generic project structure might look something like this:
 
   ```bash
@@ -47,11 +48,12 @@ $ npm install -g cordova-runner
 
   ```
 
+
   - **Note:** Your root html **must** be called `index.html`. Please rename your root html file if you have to.
 
-2. Run in your terminal:
+1. Run in your terminal:
 ```bash
 $ cordova-runner
 ```
 
-3. After that, just follow the prompt.
+2. After that, just follow the prompt.
