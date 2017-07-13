@@ -28,9 +28,9 @@ $ npm install -g cordova-runner
 
 #### Setup:
 
-1. `cd` into the project.
+1. `cd` into your `html/css/js` project.
 
-  - A generic html/css/js project might look something like this:
+  - A generic project structure might look something like this:
 
   ```bash
   .
