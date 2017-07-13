@@ -47,6 +47,7 @@ cordova create $dirname $projectname $displayname
 
 cp -r !($dirname|*.png) $dirname/www/
 cp *.png $dirname/
+rm -rf $dirname/res
 
 cd $dirname
 mkdir hooks/after_prepare

@@ -1,7 +1,7 @@
 ## Cordova Project Setup
 
-##### TODO - Automate file structure setup prior to adding platforms
 
+#### Explain file structure and icon placement
 
 #### Prequisites:
 
@@ -10,15 +10,24 @@ Please install
 - [Android Studio](https://developer.android.com/studio/index.html) (for Android development)
 - [Xcode](https://itunes.apple.com/de/app/xcode/id497799835?l=en&mt=12) (for iOS development)
 
+- Imagemagick (for `cordova-icon` and `cordova-splash`)
+
+``` bash
+$ sudo apt-get install imagemagick
+$ # on Mac: brew install imagemagick
+$ # on Windows: http://www.imagemagick.org/script/binary-releases.php#windows (check "Legacy tools")
+```
 
 #### Clone the repo:
 
 ```bash
-$ git clone https://github.com/dankreiger/cordova_setup.git
-$ cd cordova_setup
+$ git clone https://github.com/dankreiger/cordova-runner.git
+$ cd cordova-runner
 ```
 
-#### Make script executable:
+
+
+<!-- #### Make script executable:
 
 ```bash
 $ chmod +x ./cordova.sh
@@ -28,7 +37,7 @@ $ chmod +x ./cordova.sh
 
 ```bash
 $ ./cordova.sh
-```
+``` -->
 
 
 After that, just follow the prompt.
