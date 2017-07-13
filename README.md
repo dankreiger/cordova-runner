@@ -1,8 +1,11 @@
 ## Cordova Runner
 
+[![Build Status](https://travis-ci.org/dankreiger/cordova-runner.svg?branch=master)](https://travis-ci.org/dankreiger/cordova-runner)
+
+
 ##### Turn your html/css/js project into an iOS or Android app.
 
-#### Prequisites:
+#### Prerequisites:
 
 Please install
 - [Node >= 6.0.0 and NPM >= 5.0.0](./NODE_INSTALL.md)
