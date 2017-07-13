@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/dankreiger/cordova-runner.svg?branch=master)](https://travis-ci.org/dankreiger/cordova-runner)
 
 
-##### Turn your html/css/js project into an iOS or Android app.
+##### Turn your html/css/js project into an iOS or Android app via Cordova.
 
 #### Prerequisites:
 
@@ -52,8 +52,8 @@ $ npm install -g cordova-runner
 
 2. Run in your terminal:
 
-  ```bash
-  $ cordova-runner
-  ```
+```bash
+$ cordova-runner
+```
 
 3. After that, just follow the prompt.
