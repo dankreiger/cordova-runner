@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
 var shell = require('shelljs');
-shell.echo('hello world');
-
-
+shell.echo('Cordova version:');
 shell.exec('cordova -v');

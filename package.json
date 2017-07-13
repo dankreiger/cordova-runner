@@ -13,8 +13,8 @@
   "author": "Dan Kreiger <dan@dankreiger.com> (http://www.dankreiger.com)",
   "license": "MIT",
   "bin": {
-    "cordova-runner": "./cordova.sh",
-    "snippet": "./index.js"
+    "check-cordova-version": "./index.js",
+    "cordova-runner": "./cordova.sh"
   },
   "bugs": {
     "url": "https://github.com/dankreiger/cordova-runner/issues"
