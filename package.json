@@ -1,6 +1,6 @@
 {
   "name": "cordova-runner",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Create, run, and build cordova apps",
   "main": "index.js",
   "scripts": {
