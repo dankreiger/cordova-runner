@@ -1,7 +1,6 @@
-## Cordova Project Setup
+## Cordova Runner
 
-
-#### Explain file structure and icon placement
+##### Turn your html/css/js project into an iOS or Android app.
 
 #### Prequisites:
 
@@ -10,7 +9,7 @@ Please install
 - [Android Studio](https://developer.android.com/studio/index.html) (for Android development)
 - [Xcode](https://itunes.apple.com/de/app/xcode/id497799835?l=en&mt=12) (for iOS development)
 
-- Imagemagick (for `cordova-icon` and `cordova-splash`)
+- Imagemagick for icon processing
 
 ``` bash
 $ sudo apt-get install imagemagick
@@ -18,26 +17,40 @@ $ # on Mac: brew install imagemagick
 $ # on Windows: http://www.imagemagick.org/script/binary-releases.php#windows (check "Legacy tools")
 ```
 
-#### Clone the repo:
+#### Install:
 
 ```bash
-$ git clone https://github.com/dankreiger/cordova-runner.git
-$ cd cordova-runner
+$ npm install -g cordova-runner
 ```
 
+#### Setup:
 
+1. `cd` into the project.
 
-<!-- #### Make script executable:
+  - A generic html/css/js project might look something like this:
 
-```bash
-$ chmod +x ./cordova.sh
-```
+  ```bash
+  .
+  ├── css
+  │   ├── style.css
+  │   └── theme.css
+  ├── img
+  │   └── image.png
+  ├── js
+  │   ├── custom.js
+  │   └── theme.js
+  ├── about.html
+  ├── contact.html
+  └── index.html
 
-#### Run script
+  ```
 
-```bash
-$ ./cordova.sh
-``` -->
+  - Note: Your root html **must** be called `index.html`. Please rename your root html file if you have to.
 
+2. Run in your terminal:
 
-After that, just follow the prompt.
+  ```bash
+  $ cordova-runner
+  ```
+
+3. After that, just follow the prompt.
