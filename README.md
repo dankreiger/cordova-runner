@@ -1,5 +1,7 @@
 ## Cordova Project Setup
 
+##### TODO - Automate file structure setup prior to adding platforms
+
 
 #### Prequisites:
 
