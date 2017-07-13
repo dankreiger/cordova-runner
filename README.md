@@ -48,10 +48,9 @@ $ npm install -g cordova-runner
 
   ```
 
-  - Note: Your root html **must** be called `index.html`. Please rename your root html file if you have to.
+  - **Note:** Your root html **must** be called `index.html`. Please rename your root html file if you have to.
 
 2. Run in your terminal:
-
 ```bash
 $ cordova-runner
 ```
