@@ -1,58 +1,35 @@
 #!/bin/bash
 
-source ./constants.sh
-
-
-node_preq(){
-  echo
-  read -p "Have you installed Node.js with npm? [y/n] " -n 1 -r
-    echo
-    if [[ $REPLY =~ ^[Yy]$ ]]
-    then
-      cordova_preq
-    else
-      echo
-      printf "${YELLOW}Please install node.js before continuing${NC}"
-      echo;echo;echo
-    fi
-}
-
-cordova_preq(){
-  echo
-  read -p "Have you installed Cordova globally via npm? [y/n] " -n 1 -r
-    echo
-    if [[ $REPLY =~ ^[Yy]$ ]]
-    then
-      cordova_init
-    else
-      os_menu
-    fi
-}
-
-snig(){
-  echo;echo;echo
-  printf "Running ${CYAN}sudo npm install -g cordova${NC}"
-  echo
-  echo "You will need your sudo password:"
-  printf "${BORDER}"
-  echo
-
-  sudo npm install -g cordova
-}
-
-os_menu(){
-  echo
-  printf "\n${BORDER}\n\n${CYAN}Are you using Mac OS, Linux, or Windows?${NC}\n\n"
-  PS3="$prompt"
-  select opt in "${os_opts[@]}"; do
-    case "$REPLY" in
-      1 ) snig; cordova_init; break;;
-      2 ) snig; cordova_init; break;;
-      3 ) npm install -g cordova; cordova_init; break;;
-      *) echo "Invalid option. Please enter 1, 2, or 3.";continue;;
-    esac
-  done
-}
+GREEN='\033[0;32m';
+YELLOW='\033[1;33m';
+CYAN='\033[0;36m';
+NC='\033[0m'; # No Color
+BORDER=$(printf '=%.0s' {1..42});
+cordova_title=$( echo;echo;printf ${NC}$BORDER;printf "\n\tCordova Setup\n";echo $BORDER; echo )
+cordova_description=$( printf "\n\nPlease make sure you have Android Studio and XCode installed\n" )
+cordovaopts=(
+"Setup Android and iOS"
+"Setup Android"
+"Setup iOS"
+"Exit Cordova Setup"
+)
+androidopts=(
+"Development"
+"Release"
+"Exit"
+)
+os_opts=(
+"Mac OS X"
+"Linux"
+"Windows"
+)
+platforms=(
+"Android"
+"iOS"
+"Exit"
+)
+prompt=$(printf "\nPick an option and press [enter]: ")
+shopt -s extglob
 
 
 cordova_init(){
@@ -72,6 +49,8 @@ cordova_init(){
   echo;echo
   printf "Running ${GREEN}Done"
 
+  printf "${CYAN}cordova create $dirname $projectname $displayname${NC}..."
+  cp -r !($dirname) $dirname/www/
   cd $dirname
   cordova_setup
 }
@@ -95,10 +74,13 @@ cordova_setup(){
   done
 }
 
+# cordova version needed for CLI
+# https://stackoverflow.com/questions/42668185/could-not-find-gradle-wrapper-within-android-sdk-might-need-to-update-your-andr
 init_android_and_ios(){
   echo
   cordova platform rm android ios
-  cordova platform add android ios
+  cordova platform add android@6.2.2
+  cordova platform add ios
   android_environment_menu
   launch_xcode
 }
@@ -106,7 +88,7 @@ init_android_and_ios(){
 init_android(){
   echo
   cordova platform rm android
-  cordova platform add android
+  cordova platform add android@6.2.2
   android_environment_menu
 }
 
@@ -205,4 +187,5 @@ clear
 echo;echo
 printf "${CYAN}Welcome to Cordova App Builder${NC}";echo;echo
 
-node_preq
+
+cordova_init

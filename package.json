@@ -1,0 +1,30 @@
+{
+  "name": "cordova-runner",
+  "version": "0.0.1",
+  "description": "Create, run, and build cordova apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dankreiger/cordova-runner.git"
+  },
+  "author": "Dan Kreiger <dan@dankreiger.com> (http://www.dankreiger.com)",
+  "license": "MIT",
+  "bin": {
+    "cordova-runner": "./cordova.sh",
+    "snippet": "./index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/dankreiger/cordova-runner/issues"
+  },
+  "homepage": "https://github.com/dankreiger/cordova-runner#readme",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
+  },
+  "dependencies": {
+    "shelljs": "^0.7.8"
+  }
+}
