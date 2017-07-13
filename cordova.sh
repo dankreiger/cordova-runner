@@ -30,7 +30,7 @@ cordova_preq(){
 }
 
 snig(){
-  echo
+  echo;echo;echo
   printf "Running ${CYAN}sudo npm install -g cordova${NC}"
   echo
   echo "You will need your sudo password:"
@@ -57,22 +57,29 @@ os_menu(){
 
 cordova_init(){
   echo
-  echo "Please enter your new project directory name:"
+  printf "${YELLOW}Please enter your new project directory name:${NC} "
   read dirname
-  echo "Please enter your app id (e.g. com.company.projectname):"
+  echo
+  printf "${YELLOW}Please enter your app id (e.g. com.company.projectname):${NC} "
   read projectname
-  echo "Please enter your app's display title (i.e. ProjectName):"
+  echo
+  printf "${YELLOW}Please enter your app's display title (i.e. ProjectName):${NC} "
   read displayname
 
+  echo;echo;echo
   printf "Running ${CYAN}cordova create $dirname $projectname $displayname${NC}..."
   cordova create $dirname $projectname $displayname
+  echo;echo
+  printf "Running ${GREEN}Done"
 
+  cd $dirname
   cordova_setup
 }
 
 
 cordova_setup(){
   echo
+  clear
   printf "${CYAN}${cordova_title}${NC}"
   printf "${YELLOW}${cordova_description}${NC}\n\n"
 
@@ -126,7 +133,7 @@ init_ios(){
 
 launch_xcode(){
   echo
-  open platforms/ios/*.xcodeproj
+  open platforms/ios/$displayname.xcodeproj
   if [ $? -eq 0 ]; then
     echo;echo
     echo 'Welcome to Halosonic App iOS'
