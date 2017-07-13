@@ -1,5 +1,6 @@
 ## Cordova Project Setup
 
+
 #### Prequisites:
 
 Please install
@@ -7,6 +8,13 @@ Please install
 - [Android Studio](https://developer.android.com/studio/index.html) (for Android development)
 - [Xcode](https://itunes.apple.com/de/app/xcode/id497799835?l=en&mt=12) (for iOS development)
 
+
+#### Clone the repo:
+
+```bash
+$ git clone https://github.com/dankreiger/cordova_setup.git
+$ cd cordova_setup
+```
 
 #### Make script executable:
 
