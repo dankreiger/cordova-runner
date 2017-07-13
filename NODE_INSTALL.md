@@ -1,6 +1,6 @@
 ## Node installation
 
-# VERSION CHECK
+### VERSION CHECK
 
 - Check to see if you have node installed and which version.
 
@@ -55,4 +55,4 @@
   $ nvm install 6.0.0
   ```
 
-  Once everything is installed, please go back and do the [version check](#version_check).
+  Once everything is installed, please go back and do the [version check](#version-check).
