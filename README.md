@@ -3,9 +3,9 @@
 <p align="center">
   <h3 align="center">Cordova Runner</h3>
   <p align="center">
-    Transform html/css/js project into an iOS or Android app.
+    Transform html/css/js projects into iOS and Android apps.
     <br>
-    <a href="https://dankreiger.github.io/cordova-runner"><strong>Explore Docs &raquo;</a></strong></a>
+    <a href="https://dankreiger.github.io/cordova-runner"><strong>Explore Docs &raquo;</strong></a>
     <br>
     <br>
   </p>
@@ -22,11 +22,12 @@
 - [Setup](#setup)
 - [Usage](#usage)
 
+
 ## Status
 [![Build Status](https://travis-ci.org/dankreiger/cordova-runner.svg?branch=master)](https://travis-ci.org/dankreiger/cordova-runner)
 
 
-## Prerequisites:
+## Prerequisites
 
 Please install
 - [Node >= 6.0.0 and NPM >= 5.0.0](./NODE_INSTALL.md)
@@ -57,17 +58,13 @@ $ # on Windows: http://www.imagemagick.org/script/binary-releases.php#windows (c
 
 - Please copy your `icon.png` and `splash.png` to the root of your project before using `cordova-runner`.
 
-***
-
-## Install:
+## Install
 
 ```bash
 $ npm install -g cordova-runner
 ```
 
-***
-
-## Setup:
+## Setup
 
 - `cd` into your `html/css/js` project.
 
