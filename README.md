@@ -1,5 +1,5 @@
 <p align="center">
-  <h2 align="center">Cordova Runner</h2>
+  <h3 align="center">Cordova Runner</h3>
   <p align="center">
     Transform html/css/js projects into iOS and Android apps.
     <br><br>
