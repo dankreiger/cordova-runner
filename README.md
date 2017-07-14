@@ -48,7 +48,7 @@ $ # on Windows: http://www.imagemagick.org/script/binary-releases.php#windows (c
 **App icon**
 - Your app icon must be a `.png` file
 - You must name it `icon.png`
-- It should be square and ideally 512*512px, but no smaller than 192*192px
+- It should be square and ideally 512x512px, but no smaller than 192x192px
 
 **Loading screen**
 - Your app icon must be a `.png` file
