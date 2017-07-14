@@ -1,5 +1,3 @@
-## Cordova Runner
-
 <p align="center">
   <h3 align="center">Cordova Runner</h3>
   <p align="center">
