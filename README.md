@@ -5,7 +5,7 @@
   <p align="center">
     Transform html/css/js project into an iOS or Android app.
     <br>
-    [Explore Docs &raquo;](https://dankreiger.github.io/cordova-runner)</strong></a>
+    <a href="https://dankreiger.github.io/cordova-runner"><strong>Explore Docs &raquo;</a></strong></a>
     <br>
     <br>
   </p>
