@@ -20,11 +20,31 @@ $ # on Mac: brew install imagemagick
 $ # on Windows: http://www.imagemagick.org/script/binary-releases.php#windows (check "Legacy tools")
 ```
 
+#### App icons and loading screens
+
+- `cordova-runner` uses the convenient [cordova-icon](https://github.com/AlexDisler/cordova-icon) and [cordova-splash](https://github.com/AlexDisler/cordova-splash) packages for icon and loading (splash) screen processing.
+
+**App icon**
+- Your app icon must be a `.png` file
+- You must name it `icon.png`
+- It should be square and ideally 512*512px, but no smaller than 192*192px
+
+**Loading screen**
+- Your app icon must be a `.png` file
+- You must name it `splash.png`
+- It should be 2208x2208 px with a center square of about 1200x1200 px.
+
+- Please copy your `icon.png` and `splash.png` to the root of your project before using `cordova-runner`.
+
+***
+
 #### Install:
 
 ```bash
 $ npm install -g cordova-runner
 ```
+
+***
 
 #### Setup:
 
@@ -44,7 +64,9 @@ $ npm install -g cordova-runner
   │   └── theme.js
   ├── about.html
   ├── contact.html
-  └── index.html
+  ├── icon.png
+  ├── index.html
+  └── splash.png
 
   ```
 
