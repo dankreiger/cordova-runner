@@ -2,9 +2,6 @@
   <h3 align="center">Cordova Runner</h3>
   <p align="center">
     Transform html/css/js projects into iOS and Android apps.
-    <br><br>
-    <a href="https://dankreiger.github.io/cordova-runner"><strong>Explore Docs &raquo;</strong></a>
-    <br>
   </p>
 </p>
 
