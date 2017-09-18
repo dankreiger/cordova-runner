@@ -139,7 +139,7 @@ echo
 open platforms/ios/$displayname.xcodeproj
 if [ $? -eq 0 ]; then
   echo;echo
-  echo 'Welcome to Halosonic App iOS'
+  printf "Welcome to ${displayname} App iOS"
   printf "${BORDER}\nPlease do your development and release builds inside of XCode\n"
   echo
   echo "XCode instructions: "
