@@ -46,7 +46,7 @@ $ # on Windows: http://www.imagemagick.org/script/binary-releases.php#windows (c
 - It should be square and ideally 512x512px, but no smaller than 192x192px
 
 **Loading screen**
-- Your app icon must be a `.png` file
+- Your loading screen (splash image) must be a `.png` file
 - You must name it `splash.png`
 - It should be 2208x2208 px with a center square of about 1200x1200 px.
 
