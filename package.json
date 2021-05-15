@@ -22,7 +22,7 @@
   "homepage": "https://github.com/dankreiger/cordova-runner#readme",
   "devDependencies": {
     "chai": "^4.1.0",
-    "mocha": "^3.4.2"
+    "mocha": "8.4.0"
   },
   "dependencies": {
     "cordova-icon": "^0.9.1",
